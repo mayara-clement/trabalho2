@@ -1,0 +1,174 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 0;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-wrapper {
+  width: 100%;
+  max-width: 1300px;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.search {
+  margin-right: 10px;
+}
+
+.search-input {
+  width: 200px;
+  padding: 5px;
+}
+
+.login {
+  margin-right: 10px;
+}
+
+.login-link {
+  text-decoration: none;
+  color: #fff;
+}
+
+.list-button {
+  margin-right: 10px;
+}
+
+.list-button-link {
+  text-decoration: none;
+  color: #fff;
+}
+
+.cart {
+  margin-right: 10px;
+}
+
+.cart-link {
+  text-decoration: none;
+  color: #fff;
+}
+
+.nav {
+  background-color: #555;
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+}
+
+.nav-link {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 15px;
+}
+
+.banner img {
+  width: 100%;
+}
+
+.shelf {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+}
+
+.shelf-item {
+  width: 200px;
+  margin: 10px;
+  text-align: center;
+}
+
+.product-image {
+  max-width: 100%;
+}
+
+.product-name {
+  font-weight: bold;
+}
+
+.product-price {
+  color: #777;
+}
+
+/* Estilos do footer */
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact,
+.brand {
+  flex: 1;
+}
+
+.contact p {
+  margin: 5px 0;
+}
+
+.brand {
+  text-align: right;
+}
+
+#mini-cart {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 10px;
+  width: 200px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+  font-family: Arial, sans-serif;
+}
+
+#mini-cart h2 {
+  font-size: 14px;
+  font-weight: bold;
+  color: #333; 
+}
+
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+
+.cart-item span {
+  font-size: 14px;
+  font-weight: bold;
+  color: #333;
+}
+
+#close-button {
+  display: block;
+  margin: 10px 0;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+}
