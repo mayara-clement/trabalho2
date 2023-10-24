@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/styles/home.css" />
+    <title>Sua Loja Online</title>
+    <style>
+      footer {
+        bottom: 0px;
+        position: fixed;
+        width: 100%;
+}
+      table, th, td {
+        border: 1px solid black;
+        margin: 20px;
+        margin-left:auto;
+        margin-right: auto;
+}
+      th, td {
+        padding: 5px;
+        margin-left: 10px;
+        margin-right: 10px;
+}            
+    </style>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-wrapper">
+        <div class="logo">Sua Loja Online</div>
+        <div class="search">
+          <input class="search-input" type="text" placeholder="Buscar" />
+        </div>
+        <div class="login">
+          <a class="login-link" href="#">Login</a>
+        </div>
+        <div class="list-button">
+          <a class="list-button-link" href="/index.html">Voltar</a>
+        </div>
+        <div class="cart-button">
+          <button id="open-cart-button" onclick="openMiniCart()">Carrinho</button>
+        </div>
+        <div id="mini-cart">
+          <h2>My cart</h2>
+          <div id="cart-items"></div>
+          <button id="close-button" onclick="closeMiniCart()">Fechar</button>
+        </div>
+      </header>
+    <table>
+      <tr>
+        <th>código do produto</th>
+        <th>descrição</th>
+        <th>unidades vendidas</th>
+        <th>unidades em Estoque</th>
+        <th>valor unitário</th>
+      </tr>
+      <tr>
+        <td>inserir dado</td>
+        <td>Bleach</td>
+        <td>inserir dado</td>
+        <td>inserir dado</td>
+        <td>inserir dado</td>
+      </tr>
+      <tr>
+        <td>inserir dado</td>
+        <td>HunterXHunter</td>
+        <td>inserir dado</td>
+        <td>inserir dado</td>
+        <td>inserir dado</td>
+      </tr>
+      <tr>
+        <td>inserir dado</td>
+        <td>Inuyasha</td>
+        <td>inserir dado</td>
+        <td>inserir dado</td>
+        <td>inserir dado</td>
+      </tr>
+      <tr>
+        <td>inserir dado</td>
+        <td>Naruto</td>
+        <td>inserir dado</td>
+        <td>inserir dado</td>
+        <td>inserir dado</td>
+      </tr>
+      <tr>
+        <td>inserir dado</td>
+        <td>One Piece</td>
+        <td>inserir dado</td>
+        <td>inserir dado</td>
+        <td>inserir dado</td>
+      </tr>
+      <tr>
+        <td>inserir dado</td>
+        <td>One Punch-Man</td>
+        <td>inserir dado</td>
+        <td>inserir dado</td>
+        <td>inserir dado</td>
+      </tr>
+    </table>
+    <footer class="footer">
+      <div class="contact">
+        <p>Entre em contato:</p>
+        <p>Telefone: (XX) XXXX-XXXX</p>
+        <p>Email: contato@sualoja.com</p>
+      </div>
+      <div class="brand">
+        <p>&copy; 2023 Mangás dms</p>
+      </div>
+    </footer>
+  </body>
+</html>
