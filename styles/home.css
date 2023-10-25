@@ -12,7 +12,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
+} 
 
 .header-wrapper {
   width: 100%;
@@ -66,13 +66,19 @@ body {
   color: #fff;
 }
 
-.list-button {
-  margin-right: 10px;
+.pngestoque{
+  width: 40px;
+  height: 40px;
 }
 
-.list-button-link {
-  text-decoration: none;
-  color: #fff;
+.pnglogin{
+  width: 40px;
+  height: 40px;
+}
+
+.pngcarrinho{
+  width: 40px;
+  height: 40px;
 }
 
 .cart {
@@ -89,12 +95,37 @@ body {
   display: flex;
   justify-content: center;
   padding: 10px 0;
+  height: 30px;
 }
 
 .nav-link {
   color: #fff;
   text-decoration: none;
   margin: 0 15px;
+}
+.add-to-cart-button{
+  color: #ffffff;
+  border-radius: 7px;
+  background-color: #007AF5;
+  border-color: black;
+  border-width: medium;
+  width: 100px;
+}
+.add-to-cart-button:hover{
+  background-color: #084f97;
+  color: white;
+}
+
+
+button{
+  margin: 0 50px;
+  border-radius: 5px;
+  background-color: transparent;
+  border-color: transparent;
+  color: white;
+}
+button:hover{
+  color: #6c3671;
 }
 
 .banner img {
