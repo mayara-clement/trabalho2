@@ -6,11 +6,6 @@
     <link rel="stylesheet" href="/styles/home.css" />
     <title>Sua Loja Online</title>
     <style>
-      footer {
-        bottom: 0px;
-        position: fixed;
-        width: 100%;
-}
       table, th, td {
         border: 1px solid black;
         margin: 20px;
@@ -21,7 +16,65 @@
         padding: 5px;
         margin-left: 10px;
         margin-right: 10px;
+}      
+      h1 {
+        text-align: center;
+        padding: 10px;
+  }
+      button {
+        margin-left: 10px;
+        margin-right: 10px;
+}
+      .add {
+        background-color: green;
+        color: white;
+        border: none;
+        padding: 5px;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-left: 180px;
+        margin-bottom: 15px;
+}
+      .add:hover {
+        background-color: darkgreen;
+}
+      .att {
+        margin-left: 180px;
+        background-color: darkorange;
+        color: white;
+        border: none;
+        padding: 5px;
+        border-radius: 5px;
+        cursor: pointer;
 }            
+      .att:hover {
+        background-color: orange;
+}
+      .del {
+        background-color: red;
+        border: none;
+        color: white;
+        padding: 5px;
+        border-radius: 5px;
+        cursor: pointer;
+}
+      .del:hover {
+        background-color: rgb(219, 0, 0);
+}
+      .alt {
+        background-color: rgb(22, 22, 222);
+        border: none;
+        color: white;
+        padding: 5px;
+        border-radius: 5px;
+        cursor: pointer;
+}       
+      .alt:hover {
+        background-color: rgb(0, 0, 185);
+}
+      footer {
+        margin-top: 30px;
+}
     </style>
   </head>
   <body>
@@ -29,8 +82,9 @@
       <div class="header-wrapper">
         <div class="logo">Sua Loja Online</div>
         <div class="search">
-          <input class="search-input" type="text" placeholder="Buscar" />
-        </div>
+          <input class="search-input" type="text" placeholder="Buscar..."/>
+          <img src="/assets/images/teste lupa.png" class="pnglupa">
+        </div>  
         <div class="login">
           <a class="login-link" href="#">Login</a>
         </div>
@@ -46,6 +100,10 @@
           <button id="close-button" onclick="closeMiniCart()">Fechar</button>
         </div>
       </header>
+      <h1>Administração dos itens no Estoque</h1>
+      <button class="add">Adicionar Produtos</button>
+      <br>
+      <button class="att">Atualizar Estoque</button>
     <table>
       <tr>
         <th>código do produto</th>
@@ -53,6 +111,7 @@
         <th>unidades vendidas</th>
         <th>unidades em Estoque</th>
         <th>valor unitário</th>
+        <th>modificar</th>
       </tr>
       <tr>
         <td>inserir dado</td>
@@ -60,6 +119,7 @@
         <td>inserir dado</td>
         <td>inserir dado</td>
         <td>inserir dado</td>
+        <td><button class="alt">Alterar</button><button class="del">Excluir</button></td>
       </tr>
       <tr>
         <td>inserir dado</td>
@@ -67,6 +127,7 @@
         <td>inserir dado</td>
         <td>inserir dado</td>
         <td>inserir dado</td>
+        <td><button class="alt">Alterar</button><button class="del">Excluir</button></td>
       </tr>
       <tr>
         <td>inserir dado</td>
@@ -74,6 +135,7 @@
         <td>inserir dado</td>
         <td>inserir dado</td>
         <td>inserir dado</td>
+        <td><button class="alt">Alterar</button><button class="del">Excluir</button></td>
       </tr>
       <tr>
         <td>inserir dado</td>
@@ -81,6 +143,7 @@
         <td>inserir dado</td>
         <td>inserir dado</td>
         <td>inserir dado</td>
+        <td><button class="alt">Alterar</button><button class="del">Excluir</button></td>
       </tr>
       <tr>
         <td>inserir dado</td>
@@ -88,6 +151,7 @@
         <td>inserir dado</td>
         <td>inserir dado</td>
         <td>inserir dado</td>
+        <td><button class="alt">Alterar</button><button class="del">Excluir</button></td>
       </tr>
       <tr>
         <td>inserir dado</td>
@@ -95,6 +159,7 @@
         <td>inserir dado</td>
         <td>inserir dado</td>
         <td>inserir dado</td>
+        <td><button class="alt">Alterar</button><button class="del">Excluir</button></td>
       </tr>
     </table>
     <footer class="footer">
