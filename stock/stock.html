@@ -15,6 +15,7 @@
         border-bottom: 1px solid black;
         border-right: 1px solid black;
         border-left: 1px solid black;
+        border-top: 1px solid black;
 }
       th, td {
         margin-left: 10px;
@@ -102,14 +103,23 @@
           <img src="/assets/images/teste lupa.png" class="pnglupa">
         </div>  
         <div class="login">
-          <a class="login-link" href="#">Login</a>
+          <a href="">
+            <img src="/assets/images/login.png" class="pnglogin">
+          </a>
         </div>
         <div class="list-button">
-          <a class="list-button-link" href="/index.html">Voltar</a>
+          <a href="/index.html">
+            <img src="/assets/images/estoque.png" class="pngestoque">
+          </a>
         </div>
         <div class="cart-button">
-          <button id="open-cart-button" onclick="openMiniCart()">Carrinho</button>
+          <a>
+            <img src="/assets/images/carrinho.png" class="pngcarrinho" onclick="openMiniCart()">
+          </a>
+          
+          <!-- <button id="open-cart-button" onclick="openMiniCart()">Carrinho</button> -->
         </div>
+
         <div id="mini-cart">
           <h2>My cart</h2>
           <div id="cart-items"></div>
