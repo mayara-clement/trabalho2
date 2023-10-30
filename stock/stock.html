@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="/styles/home.css" />
     <title>Sua Loja Online</title>
     <style>
-      table, th, td {
+    table, th, td {
         border-collapse: collapse;
         margin: 20px;
         margin-left:auto;
@@ -49,9 +49,11 @@
 }
       .add:hover {
         background-color: darkgreen;
+        color: black;
 }
       .add:active {
         background-color: rgb(0, 48, 0);
+        color: black;
 }
       .att {
         background-color: darkorange;
@@ -63,7 +65,12 @@
 }            
       .att:hover {
         background-color: orange;
+        color: black;
 }
+      .att:active {
+        background-color: rgb(187, 121, 0);
+        color: black;
+}       
       .del {
         background-color: red;
         border: none;
@@ -74,6 +81,10 @@
 }
       .del:hover {
         background-color: rgb(219, 0, 0);
+        color: rgb(118, 66, 66);
+}
+      .del:active {
+        background-color: rgb(150, 0, 0);
 }
       .alt {
         background-color: rgb(22, 22, 222);
@@ -85,6 +96,10 @@
 }       
       .alt:hover {
         background-color: rgb(0, 0, 185);
+        color: black;
+}
+      .alt:active {
+        background-color: rgb(0, 0, 117);        
 }
       .upside-button {
         text-align: center;
@@ -116,8 +131,6 @@
           <a>
             <img src="/assets/images/carrinho.png" class="pngcarrinho" onclick="openMiniCart()">
           </a>
-          
-          <!-- <button id="open-cart-button" onclick="openMiniCart()">Carrinho</button> -->
         </div>
 
         <div id="mini-cart">
