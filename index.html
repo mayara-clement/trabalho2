@@ -1,73 +1,77 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./styles/home.css" />
-    <title>Sua Loja Online</title>
-  </head>
-  <body>
-    <header class="header">
-      <div class="header-wrapper">
-        <div class="logo">Sua Loja Online</div>
 
-        <div class="search">
-          <input class="search-input" type="text" placeholder="Buscar..."/>
-          <img src="assets/images/teste lupa.png" class="pnglupa">
-        </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./styles/styles.css" />
+  <title>Sua Loja Online</title>
+</head>
 
-        <div class="login">
-          <a href="">
-            <img src="assets/images/login.png" class="pnglogin">
-          </a>
-        </div>
-
-        <div class="list-button">
-          <a href="stock/stock.html">
-            <img src="assets/images/estoque.png" class="pngestoque">
-          </a>
-        </div>    
-
-        <div class="cart-button">
-          <a>
-            <img src="assets/images/carrinho.png" class="pngcarrinho" onclick="openMiniCart()">
-          </a>
-          
-          <!-- <button id="open-cart-button" onclick="openMiniCart()">Carrinho</button> -->
-        </div>
-
-        <div id="mini-cart">
-          <h2>My cart</h2>
-          <div id="cart-items"></div>
-          <button id="close-button" onclick="closeMiniCart()">Fechar</button>
-        </div>
-      </header>
-
-    <nav class="nav">
-      <div id="categorias">
-        <!-- Botões serão gerados dinamicamente aqui -->
+<body>
+  <header class="header">
+    <div class="header-wrapper">
+      <div class="logo">
+        <a href="/"><img src="/assets/images/logo (2).png" alt="logo"> <span>Mangás DMS</span> </a>
       </div>
-    </nav>
 
-    <div class="banner">
-      <img src="./assets/images/banner1-2000x450.png" alt="banner" />
+      <div class="search">
+        <input class="search-input" type="text" placeholder="Buscar..." />
+        <img src="assets/images/teste lupa.png" class="pnglupa">
+      </div>
+
+      <div class="login">
+        <a href="">
+          <img src="assets/images/login.png" class="pnglogin">
+        </a>
+      </div>
+
+      <div class="list-button">
+        <a href="stock/stock.html">
+          <img src="assets/images/estoque.png" class="pngestoque">
+        </a>
+      </div>
+
+      <div class="cart-button">
+        <a>
+          <img src="assets/images/carrinho.png" class="pngcarrinho" onclick="openMiniCart()">
+        </a>
+
+        <!-- <button id="open-cart-button" onclick="openMiniCart()">Carrinho</button> -->
+      </div>
+
+      <div id="mini-cart">
+        <h2>My cart</h2>
+        <div id="cart-items"></div>
+        <button id="close-button" onclick="closeMiniCart()">Fechar</button>
+      </div>
+  </header>
+
+  <nav class="nav">
+    <div id="categorias">
+      <!-- Botões serão gerados dinamicamente aqui -->
     </div>
+  </nav>
 
-    <div class="shelf" id="product-list">
-      <!-- Produtos serão listados aqui dinamicamente -->
+  <div class="banner">
+    <img src="./assets/images/banner1-2000x450.png" alt="banner" />
+  </div>
+
+  <div class="shelf" id="product-list">
+    <!-- Produtos serão listados aqui dinamicamente -->
+  </div>
+
+  <footer class="footer">
+    <div class="contact">
+      <p>Telefone: (99) 99999-9999</p>
+      <p>Email: contato@sualoja.com</p>
     </div>
+    <div class="brand">
+      <p>&copy; 2023 Mangás DSM</p>
+    </div>
+  </footer>
 
-    <footer class="footer">
-      <div class="contact">
-        <p>Entre em contato:</p>
-        <p>Telefone: (XX) XXXX-XXXX</p>
-        <p>Email: contato@sualoja.com</p>
-      </div>
-      <div class="brand">
-        <p>&copy; 2023 Mangás DSM</p>
-      </div>
-    </footer>
+  <script src="./js/script.js"></script>
+</body>
 
-    <script src="./js/script.js"></script>
-  </body>
 </html>
