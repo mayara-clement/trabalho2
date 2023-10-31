@@ -247,21 +247,31 @@ function openMiniCart() {
 }
 
 function updateMiniCart() {
-  const cartItems = document.getElementById('cart-items')
-  cartItems.innerHTML = ''
+  const cartItems = document.getElementById('cart-items');
+  const totalPriceElement = document.getElementById('total-price');
+  let totalPrice = 0;
+
+  cartItems.innerHTML = '';
 
   for (let i = 0; i < cart.length; i++) {
-    const item = cart[i]
-    const cartItem = document.createElement('div')
-    cartItem.classList.add('cart-item')
+    const item = cart[i];
+    const cartItem = document.createElement('div');
+    cartItem.classList.add('cart-item');
     cartItem.innerHTML = `
       <img class="product-image" src="${item.imagem}" alt="${item.nome}" />
-      <span>${item.nome}</span>
-      <span>R$ ${item.valor.toFixed(2)}</span>
+      <div class="product-info">
+        <span class="product-name">${item.nome}</span>
+        <span class="product-price">R$ ${item.valor.toFixed(2)}</span>
+      </div>
       <button class="remove-from-cart-button" onclick="removeFromCart(${i})">Remover</button>
-    `
-    cartItems.appendChild(cartItem)
+    `;
+
+    cartItems.appendChild(cartItem);
+
+    totalPrice += item.valor;
   }
+
+  totalPriceElement.textContent = totalPrice.toFixed(2);
 }
 
 function removeFromCart(index) {
@@ -274,7 +284,6 @@ function closeMiniCart() {
   miniCart.style.display = 'none'
 }
 
-// Atualização da função openMiniCart para ser chamada pelo botão do cabeçalho
 document
   .getElementById('open-cart-button')
   .addEventListener('click', openMiniCart)
