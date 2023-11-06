@@ -1,0 +1,131 @@
+.login{
+    float: right;
+    border-right: solid 80px;
+    border-color: transparent;
+
+  }
+
+  .container{
+    float: left;
+    border-left: solid 80px;
+    border-color: transparent;
+  }
+      
+
+  .header {
+    background-color: #007af5;
+    color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .header-wrapper {
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #000;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .logo a img {
+    width: 68px;
+    height: 68px;
+  }
+  
+  .search {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: #ffffff;
+    border: solid 1px;
+    border-radius: 15px;
+    width: 720px;
+    padding: 5px;
+    height: 38px;
+  }
+  
+  .search-input {
+    order: 2;
+    float: right;
+    background-color: transparent;
+    padding-left: 5px;
+    font-style: italic;
+    font-size: 18px;
+    border: none;
+    height: 30px;
+    width: 100%;
+    display: flex;
+  }
+  .search-input:focus {
+    box-shadow: 0 0 0 0;
+    outline: 0;
+  }
+  
+  .pnglupa {
+    width: 24px;
+    height: 24px;
+    padding-left: 6px;
+  }
+  
+  .login {
+    margin-right: 10px;
+  }
+  
+  .login-link {
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  .pngestoque {
+    width: 30px;
+    height: 30px;
+  }
+  
+  .pnglogin {
+    width: 30px;
+    height: 30px;
+  }
+  
+  .pngcarrinho {
+    width: 30px;
+    height: 30px;
+  }
+  
+  input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 470px;
+  }
+  
+  button {
+    background-color: #007af5;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    
+  }
+  
+  button:hover {
+    background-color: #084f97;
+  }
+
+  a{
+    color: white;
+  }
+
