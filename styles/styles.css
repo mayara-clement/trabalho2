@@ -235,6 +235,7 @@ nav button:hover {
   background: #008cff;
   border: 5px solid #000000;
   padding: 10px;
+  max-height: 100%;
   max-width: 100%;
   width: 300px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
@@ -312,6 +313,27 @@ nav button:hover {
 
 .remove-from-cart-button:hover {
   background-color: #ff0000;
+}
+
+#close-button {
+  background-color: #ff3333;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 5px;
+  margin-top: 10px;
+  width: 100%;
+}
+
+#close-button:hover {
+  background-color: #ff0000;
+}
+
+#close-button:active {
+  background-color: #cc0000;
 }
 
 .table-stock {
