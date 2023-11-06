@@ -272,6 +272,15 @@ function updateMiniCart() {
   }
 
   totalPriceElement.textContent = totalPrice.toFixed(2);
+  const miniCart = document.getElementById('mini-cart');
+  const windowHeight = window.innerHeight;
+  const cartHeight = miniCart.clientHeight;
+  const scrollTop = window.scrollY || window.pageYOffset;
+
+  if (cartHeight > windowHeight - 100) {
+    miniCart.style.height = `${windowHeight - 100}px`;
+    miniCart.style.overflowY = 'scroll';
+  }
 }
 
 function removeFromCart(index) {
