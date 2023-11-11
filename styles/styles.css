@@ -453,7 +453,6 @@ input {
   border-radius: 5px;
   width: 470px;
   margin-bottom: 20px;
-
 }
 
 button {
@@ -471,7 +470,6 @@ button:hover {
 
 .upper-side{
   display: flex;
-  align-items: ;
   justify-content: center;
 }
 
@@ -487,17 +485,17 @@ button:hover {
 
 .cad-sec-1 h2{
   font-size: 20px;
-
 }
 
 .cad-sec-2 p{
-  align-items: center;]
+  align-items: center;
   justify-content: center;
-  
+  margin-bottom: .1px ;
 }
 
 .cad-sec-2 h2{
   font-size: 20px;
+  margin-bottom: 30px;
 }
 
 .cad-sec-2{
@@ -507,10 +505,18 @@ button:hover {
   text-align: center;
 }
 
+.b-cad{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+
 .login2{
   justify-content: center;
   text-align: center;
-  margin-bottom: 200px;
+  margin-bottom: 150px;
 }
 
 .login2 h1{
