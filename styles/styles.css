@@ -232,7 +232,7 @@ nav button:hover {
   position: fixed;
   top: 50px;
   right: 20px;
-  background: #008cff;
+  background: #ffffff;
   border: 5px solid #000000;
   padding: 10px;
   max-height: 100%;
@@ -298,7 +298,7 @@ nav button:hover {
 }
 
 .remove-from-cart-button {
-  background-color: #ff3333;
+  background-color: rgb(0, 153, 255);
   color: #fff;
   border: none;
   padding: 5px 10px;
@@ -312,11 +312,11 @@ nav button:hover {
 }
 
 .remove-from-cart-button:hover {
-  background-color: #ff0000;
+  background-color: #0099ff;
 }
 
 #close-button {
-  background-color: #ff3333;
+  background-color: #33a3ff;
   color: #fff;
   border: none;
   padding: 10px 20px;
@@ -329,11 +329,11 @@ nav button:hover {
 }
 
 #close-button:hover {
-  background-color: #ff0000;
+  background-color: #008cff;
 }
 
 #close-button:active {
-  background-color: #cc0000;
+  background-color: #0069cc;
 }
 
 .table-stock {
