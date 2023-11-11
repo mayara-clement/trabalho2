@@ -196,7 +196,7 @@ nav button:hover {
 /* Estilos do footer */
 .footer {
   background-color: #007af5;
-  color: #ffffff;
+  color: #fff;
   padding: 10px;
   text-align: center;
   display: flex;
@@ -233,7 +233,7 @@ nav button:hover {
   top: 50px;
   right: 20px;
   background: #ffffff;
-  border: 5px solid #00a2ff;
+  border: 5px solid #000000;
   padding: 10px;
   max-height: 100%;
   max-width: 100%;
@@ -266,7 +266,7 @@ nav button:hover {
   justify-content: space-between;
   margin-bottom: 10px;
   padding-bottom: 10px;
-  border-bottom: 1px solid #000000;
+  border-bottom: 1px solid #ccc;
 }
 
 .cart-item:last-child {
@@ -290,9 +290,7 @@ nav button:hover {
 
 .product-name {
   font-weight: bold;
-  margin-bottom: 5px;
-  color: #000000;
-
+  margin-bottom: 5px; 
 }
 
 .product-price {
@@ -301,7 +299,7 @@ nav button:hover {
 
 .remove-from-cart-button {
   background-color: rgb(0, 153, 255);
-  color: #000000;
+  color: #fff;
   border: none;
   padding: 5px 10px;
   cursor: pointer;
@@ -319,7 +317,7 @@ nav button:hover {
 
 #close-button {
   background-color: #33a3ff;
-  color: #000000;
+  color: #fff;
   border: none;
   padding: 10px 20px;
   cursor: pointer;
@@ -447,4 +445,74 @@ td button {
 }
 footer {
   margin-top: 30px;
+}
+
+input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 470px;
+  margin-bottom: 20px;
+
+}
+
+button {
+  background-color: #007af5;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  
+}
+
+button:hover {
+  background-color: #084f97;
+}
+
+.upper-side{
+  display: flex;
+  align-items: ;
+  justify-content: center;
+}
+
+.cad-sec-1{
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.cad-sec-1 h2{
+  font-size: 20px;
+
+}
+
+.cad-sec-2 p{
+  align-items: center;]
+  justify-content: center;
+  
+}
+
+.cad-sec-2 h2{
+  font-size: 20px;
+}
+
+.cad-sec-2{
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+  text-align: center;
+}
+
+.login2{
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 200px;
+}
+
+.login2 h1{
+  font-size: 25px;
 }

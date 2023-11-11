@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulário de cadastro</title>
-    <link rel="stylesheet" href="\trabalho2\styles\cadastro.css">
+    <link rel="stylesheet" href="/styles/styles.css">
 </head>
 <body>
     <header class="header">
@@ -30,49 +30,60 @@
             </a>
           </div>
     </header>
-    
-      <div class="container">
-          <h1>Cadastro de usuário</h1>
-          <form action="">
+
+    <h1>Cadastro de usuário</h1>
+
+    <section class="upper-side">
+        <div class="cad-sec-1">
               <h2>Informações pessoais: </h2>
-              <label for="nome"></label><br>
-              <input type="text" required placeholder="Nome">
-              <br>
-              <label for="cpf"></label><br>
-              <input type="number" required placeholder="CPF">
-              <br>
-              <label for="tell"></label><br>
-              <input type="number" required placeholder="Telefone" >
-              <br><br>
-              <label for="datanasc" id="datanasc">Data de nascimento: </label><br>
-              <input type="date"> <br> <br>
+              <p>Nome:</p>
+              <label for="nome"></label>
+              <input type="text" required>
+              <p>CPF:</p>
+              <label for="cpf"></label>
+              <input type="number" required>
+              <p>Telefone:</p>
+              <label for="tell"></label>
+              <input type="number" required>
+              <p>Data de nascimento:</p>
+              <label for="datanasc" id="datanasc"></label>
+              <input type="date" required placeholder="data" > 
+        </div>
+
+        <div class="cad-sec-2">
               
               <h2>Dados para acesso: </h2>
               <label for="email"></label><br>
               <input type="text" required placeholder="E-mail">
-              <br>
               <label for="senha"></label><br>
-              <input type="password" required placeholder="Senha">
-              <br><br>
-              
+              <input type="password" required placeholder="Senha"><br>
               <button>Cadastrar</button>
-          </form>
-      </div>
-
+        </div>
+    </section>
       <div class="login2">
           <h1>Já possui conta?</h1>
           <form action="">
               
               <label for="email"></label><br>
               <input type="text" required placeholder="E-mail">
-              <br>
               <label for="senha"></label><br>
-              <input type="password" required placeholder="Senha">
-              <br><br>
+              <input type="password" required placeholder="Senha"><br>
+
 
               <button>Login</button>
           </form>
       </div>
+
+      <footer class="footer">
+        <div class="contact">
+          <p>Telefone: (99) 99999-9999</p>
+          <p>Email: contato@sualoja.com</p>
+        </div>
+        <div class="brand">
+          <p>&copy; 2023 Mangás DSM</p>
+        </div>
+      </footer>
+      
 
   </body>
     
