@@ -130,7 +130,7 @@ document.addEventListener('DOMContentLoaded', function () {
         }
       ],
       'One Punch-Man': [
-        {          
+        {
           imagem: 'assets/images/OnePunchMan1.png',
           nome: 'My Hero Academia Vol. 1',
           valor: 11.99
@@ -161,8 +161,8 @@ document.addEventListener('DOMContentLoaded', function () {
           valor: 11.99
         }
       ],
-      'HunterxHunter': [
-        {          
+      HunterxHunter: [
+        {
           imagem: 'assets/images/hunterhunter1.png',
           nome: 'Death Note Vol. 1',
           valor: 9.5
@@ -197,6 +197,19 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
   const shelf = document.getElementById('product-list')
+  const nav = document.getElementById('nav')
+  const contentArea = document.getElementById('product-list')
+
+  function loadContent(url) {
+    const xhr = new XMLHttpRequest()
+    xhr.onreadystatechange = function () {
+      if (xhr.readyState === 4 && xhr.status === 200) {
+        contentArea.innerHTML = xhr.responseText
+      }
+    }
+    xhr.open('GET', url, true)
+    xhr.send()
+  }
 
   function showProducts(category) {
     shelf.innerHTML = ''
@@ -218,6 +231,10 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   }
 
+  function loadCategoryContent(category) {
+    showProducts(category)
+  }
+
   const categoriasDiv = document.getElementById('categorias')
   const categorias = Object.keys(mangasData.Mangas)
 
@@ -225,12 +242,13 @@ document.addEventListener('DOMContentLoaded', function () {
     const button = document.createElement('button')
     button.textContent = categoria
     button.addEventListener('click', function () {
-      showProducts(categoria)
+      loadContent('path/to/category-content.html')
+      loadCategoryContent(categoria)
     })
     categoriasDiv.appendChild(button)
   })
 
-  showProducts(categorias[0])
+  loadCategoryContent(categorias[0])
 })
 
 let cart = []
@@ -247,16 +265,16 @@ function openMiniCart() {
 }
 
 function updateMiniCart() {
-  const cartItems = document.getElementById('cart-items');
-  const totalPriceElement = document.getElementById('total-price');
-  let totalPrice = 0;
+  const cartItems = document.getElementById('cart-items')
+  const totalPriceElement = document.getElementById('total-price')
+  let totalPrice = 0
 
-  cartItems.innerHTML = '';
+  cartItems.innerHTML = ''
 
   for (let i = 0; i < cart.length; i++) {
-    const item = cart[i];
-    const cartItem = document.createElement('div');
-    cartItem.classList.add('cart-item');
+    const item = cart[i]
+    const cartItem = document.createElement('div')
+    cartItem.classList.add('cart-item')
     cartItem.innerHTML = `
       <img class="product-image" src="${item.imagem}" alt="${item.nome}" />
       <div class="product-info">
@@ -264,22 +282,22 @@ function updateMiniCart() {
         <span class="product-price">R$ ${item.valor.toFixed(2)}</span>
       </div>
       <button class="remove-from-cart-button" onclick="removeFromCart(${i})">Remover</button>
-    `;
+    `
 
-    cartItems.appendChild(cartItem);
+    cartItems.appendChild(cartItem)
 
-    totalPrice += item.valor;
+    totalPrice += item.valor
   }
 
-  totalPriceElement.textContent = totalPrice.toFixed(2);
-  const miniCart = document.getElementById('mini-cart');
-  const windowHeight = window.innerHeight;
-  const cartHeight = miniCart.clientHeight;
-  const scrollTop = window.scrollY || window.pageYOffset;
+  totalPriceElement.textContent = totalPrice.toFixed(2)
+  const miniCart = document.getElementById('mini-cart')
+  const windowHeight = window.innerHeight
+  const cartHeight = miniCart.clientHeight
+  const scrollTop = window.scrollY || window.pageYOffset
 
   if (cartHeight > windowHeight - 100) {
-    miniCart.style.height = `${windowHeight - 100}px`;
-    miniCart.style.overflowY = 'scroll';
+    miniCart.style.height = `${windowHeight - 100}px`
+    miniCart.style.overflowY = 'scroll'
   }
 }
 
