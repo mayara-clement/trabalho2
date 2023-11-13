@@ -201,14 +201,14 @@ document.addEventListener('DOMContentLoaded', function () {
   const contentArea = document.getElementById('product-list')
 
   function loadContent(url) {
-    const xhr = new XMLHttpRequest()
-    xhr.onreadystatechange = function () {
-      if (xhr.readyState === 4 && xhr.status === 200) {
-        contentArea.innerHTML = xhr.responseText
+    const dataRequest = new XMLHttpRequest()
+    dataRequest.onreadystatechange = function () {
+      if (dataRequest.readyState === 4 && dataRequest.status === 200) {
+        contentArea.innerHTML = dataRequest.responseText
       }
     }
-    xhr.open('GET', url, true)
-    xhr.send()
+    dataRequest.open('GET', url, true)
+    dataRequest.send()
   }
 
   function showProducts(category) {
