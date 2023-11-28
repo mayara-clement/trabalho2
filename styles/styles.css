@@ -34,8 +34,8 @@ body {
 }
 
 .logo a img {
-  width: 68px;
-  height: 68px;
+  width: 130px;
+  height: 106px;
 }
 
 .search {
@@ -246,7 +246,7 @@ nav button:hover {
 
 .total-price-text {
   font-size: 20px;
-  color: black; 
+  color: black;
 }
 
 #total-price {
@@ -288,7 +288,7 @@ nav button:hover {
 }
 
 .cart-item-info {
-  flex: 1; 
+  flex: 1;
 }
 
 .product-info {
@@ -298,8 +298,8 @@ nav button:hover {
 
 .product-name {
   font-weight: bold;
-  margin-bottom: 5px; 
-  color:Black
+  margin-bottom: 5px;
+  color: Black;
 }
 
 .product-price {
@@ -323,7 +323,6 @@ nav button:hover {
 .remove-from-cart-button:hover {
   background-color: #008cff;
 }
-
 
 #close-button {
   background-color: #008cff;
@@ -471,8 +470,6 @@ button {
   padding: 10px 20px;
   border-radius: 5px;
 }
-
-
 
 .upper-side {
   display: flex;
